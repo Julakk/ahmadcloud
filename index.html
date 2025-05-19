@@ -3,42 +3,63 @@
     <header>
         <div class="logo">
             <div><img src="logo.png"/></div>
-            <div class="nama">Julak</div>
-            <div class="store">STORE</div>
+        <a href="/" class="title">AhmadStore</a>
+        <div>
+</header>
+        <!-- image slider -->
+        <div class="wrap">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="1204924.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="stretched-1920-1080-1149777.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="slider-4.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="slider-5.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="stretched-1920-1080-1123246.jpg" alt=""></div>
+                </div>
+        
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-        <h1 class="hdjudul">Top-Up Game Amanah & Cepat</h1>
-    </header>
 <head>
-    <title>Julak Store Topup :: Julak Store</title>
-    <meta name="description" content="Julak Store Topup Game Termurah Dan Terpercaya, Topup sekarang dan dapatkan Promo nya, Jangan Sampai Ketinggalan Promo Menarik dari kami">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Julak Store Topup :: Julak Store">
-    <meta property="og:description" content="Julak Store Topup Game Termurah Dan Terpercaya, Topup sekarang dan dapatkan Promo nya, Jangan Sampai Ketinggalan Promo Menarik dari kami">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com">
-    <meta property="og:image" content="logo.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Julak Store Topup :: Julak Store">
-    <meta name="twitter:description" content="Julak Store Topup Game Termurah Dan Terpercaya, Topup sekarang dan dapatkan Promo nya, Jangan Sampai Ketinggalan Promo Menarik dari kami">
-    <meta name="twitter:image" content="logo.png">
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>Ahmadstore</title>
+    <div class="title">STORE TERBAIK</div>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <div class="hero-content">
+        <h1>LAYANAN TOP UP MURAH</h1>
+        <h2>JOIN TO
+            <span class="typewriter-text"></span>
+        </h2>
+        </div>
+    </div>
 </head>
 <body>
-    <img class="logotengah" src="logo.png" alt="">
-    <div class="title-p">TOPUP GAME</div>
+  <button class="yahiko" id="unmuteBtn">MUSIC</button>
+
+  <audio id="myAudio" src="audio/dj.mp3" autoplay muted loop></audio>
     <section id="populer" class="populer">
         <div class="games">
             <div class="game-item">
-                <div class="link" onclick="goToTopup('Mobile Legends')">
+                <div class="link" onclick="goToTopup('Mobile Legends ID')">
                     <img src="mlbb.png" alt="">
-                    <div class="judul-produk">ML</div>
+                    <div class="judul-produk">Mobile Legends ID</div>
+                </div>
+            </div>
+            
+            <div class="game-item">
+                <div class="link" onclick="goToTopup('Mobile Legends MY')">
+                    <img src="mlglobal.png" alt="">
+                    <div class="judul-produk">Mobile Legends MY</div>
+                </div>
+            </div>
+            
+            <div class="game-item">
+                <div class="link" onclick="goToTopup('Mobile Legends PH')">
+                    <img src="mlbbph.png" alt="">
+                    <div class="judul-produk">Mobile Legends PH</div>
                 </div>
             </div>
 
@@ -51,14 +72,14 @@
 
             <div class="game-item">
                 <div class="link" onclick="goToTopup('PUBG Mobile')">
-                    <img src="pubgm.jpg" alt="">
+                    <img src="pubgm.png" alt="">
                     <div class="judul-produk">Pubg Mobile</div>
                 </div>
             </div>
 
             <div class="game-item">
                 <div class="link" onclick="goToTopup('Genshin Impact')">
-                    <img src="GenshinImpact.jpg" alt="">
+                    <img src="GenshinImpact.png" alt="">
                     <div class="judul-produk">Genshin Impact</div>
                 </div>
             </div>
@@ -72,7 +93,7 @@
 
             <div class="game-item">
                 <div class="link" onclick="goToTopup('Valorant')">
-                    <img src="valorant.jpg" alt="">
+                    <img src="valorant.png" alt="">
                     <div class="judul-produk">Valorant</div>
                 </div>
             </div>
@@ -86,7 +107,7 @@
 
             <div class="game-item">
                 <div class="link" onclick="goToTopup('League of Legends')">
-                    <img src="lol.jpg" alt="">
+                    <img src="lol.png" alt="">
                     <div class="judul-produk">League of Legends</div>
                 </div>
             </div>
@@ -107,8 +128,15 @@
 
             <div class="game-item">
                 <div class="link" onclick="goToTopup('Stumble Guys')">
-                    <img src="st.jpg" alt="">
+                    <img src="st.png" alt="">
                     <div class="judul-produk">Stumble Guys</div>
+                </div>
+            </div>
+            
+            <div class="game-item">
+                <div class="link" onclick="goToTopup('Roblox')">
+                    <img src="roblox.png" alt="">
+                    <div class="judul-produk">Roblox</div>
                 </div>
             </div>
             
@@ -209,13 +237,27 @@
                     <div class="judul-produk">Pokemon Unite</div>
                 </div>
             </div>
+            
+            <div class="game-item">
+                <div class="link" onclick="goToTopup('Metal Slug')">
+                    <img src="metal.png" alt="">
+                    <div class="judul-produk">Metal slug</div>
+                </div>
+            </div>
+            
+            <div class="game-item">
+                <div class="link" onclick="goToTopup('Zenless Zone Zero')">
+                    <img src="zenless.png" alt="">
+                    <div class="judul-produk">Zenless Zone Zero</div>
+                </div>
+            </div>
           </div>
     </section>
 
     <section class="tentang" id="tentang">
         <div class="card">
             <p>
-                <h1>Julak Store</h1> 
+                <h1>Ahmad Store</h1> 
                 adalah website yang menyediakan layanan digital seperti
                 <br>
                 layanan kuota, pulsa, top up/voucher game, dan lain-lain.
@@ -230,7 +272,7 @@
       <h1>Ikuti Kami</h1>
       <a href="https://www.instagram.com/call.me.mad_"><img src="ig.png" alt="Instagram"></a>
       <a href="https://tiktok.com/@ahmad_amrullah12"><img src="tt.png" alt="TikTok"></a>
-      <a href="https://discord.gg/pJrTTvEG9v"><img src="dc.jpg" alt="Discord"></a>
+      <a href="https://discord.gg/pJrTTvEG9v"><img src="dc.png" alt="Discord"></a>
       <a href="https://youtube.com/@ahmadamrullah12"><img src="yt.png" alt="YouTube"></a>
     </div>
     <div class="copyright">
@@ -247,5 +289,7 @@
             window.location.href = `info.html?game=${encodeURIComponent(game)}`;
         }
     </script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
